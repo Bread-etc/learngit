@@ -1,0 +1,221 @@
+
+.Containers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+    flex-direction: column;
+    
+}
+
+.Header {
+    background-image: url(./TV一轮考核/assets/slider-3.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 100vh;
+    color: white;  
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    display: block;
+    background-image: url(./TV一轮考核/assets/slider-3.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 180px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.Ramble {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 40px;
+}
+
+.Contact {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: x-small;
+    border-style: solid;
+    border-bottom-color: #909090;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 95%;
+}
+
+.Login {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    font-size: x-small;
+    border-bottom-color: #909090;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: -8px;
+    right: 0;
+}
+
+.Login span{
+    display: flex;
+    flex-flow: column-reverse;
+    margin-left: 8px
+}
+
+.Login img{
+    transform: scale(0.65);
+    margin-bottom: -5px;
+    margin-right: -6px;
+}
+
+ul,.Guide-list {
+    border: none;
+    list-style: none;
+    margin-top: -27px;
+    height: 30px;
+}
+
+li,.Guide-list {
+    list-style: none;
+    display: inline;
+    border: none;
+    height: 30px;
+    margin-left: -2%;
+    margin-right: -0.5%;
+}
+
+a,.Guide-list {
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+    margin: 2.5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button {
+    color: white;
+    width: 134px;
+    height: 38px;
+    border-width: 2px;
+    border-radius: 28px;
+    border-color: #ffb300;
+    border-style: solid;   
+    background-color: transparent; 
+    font-size: 10px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128px;
+    width: 720px;
+    margin-top: 100px;
+    background-color: rgba(110, 110, 110, 0.5);
+    border-style: ;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.frame {
+    display: block;
+    width: 645px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.frame select {
+    text-align: center;
+    height: 50px;
+    width: 120px;
+    font-size: 10px;
+}
+
+.Reason {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+.Advantages {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    gap: 80px 0px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.introduction {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+article,.introduction {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.introduction article:nth-child(3) {
+    font-size: 15px;
+    color: #909090;
+}
+
+.round {
+    display: flex;
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+
+}
+
+img,.round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Attractions {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.Attractions span {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    width: 295px;
+    height: 100px;
+    background-color: white;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
