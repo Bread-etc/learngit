@@ -3,17 +3,17 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 0%;
     flex-direction: column;
-    
+    width: 100vw;
 }
-
+/* First page */
 .Header {
+    display: flex;
+    flex-direction: column;
     background-image: url(./TV一轮考核/assets/slider-3.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     width: 100vw;
-    height: 100vh;
     color: white;  
     background-size: cover;
     background-attachment: fixed;
@@ -25,10 +25,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     width: 100vw;
-    height: 180px;
+    height: 120px;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    border: none;
 }
 
 .Ramble {
@@ -41,7 +42,7 @@
     display: flex;
     position: absolute;
     left: 20px;
-    bottom: 10px;
+    bottom: -30px;
     font-size: x-small;
     border-style: solid;
     border-bottom-color: #909090;
@@ -76,20 +77,22 @@
     margin-right: -6px;
 }
 
-ul,.Guide-list {
-    border: none;
+.Guide-list ul {
     list-style: none;
-    margin-top: -27px;
     height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px
+    width: 70%;
 }
 
-li,.Guide-list {
-    list-style: none;
-    display: inline;
-    border: none;
-    height: 30px;
-    margin-left: -2%;
-    margin-right: -0.5%;
+li, .Guide-list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5%;
 }
 
 a,.Guide-list {
@@ -114,6 +117,8 @@ a,.Guide-list {
     font-weight: bolder;
     display: block;
     margin: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
 }
 
 .Search {
@@ -128,15 +133,15 @@ a,.Guide-list {
     border-radius: 100px;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .frame {
-    display: block;
+    display: flex;
     width: 645px;
     height: 50px;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .frame select {
@@ -145,16 +150,26 @@ a,.Guide-list {
     width: 120px;
     font-size: 10px;
 }
-
+/* Second page */
 .Reason {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    
+    background-color: white; 
+}
+
+.Reason h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.Partline {
+    margin: 0 auto;
+    background-color: rgba(255,255,255,1);
+    margin-bottom: 20px;
 }
 
 .Advantages {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto;
     grid-template-columns: auto auto;
     gap: 80px 0px;
@@ -186,7 +201,6 @@ article,.introduction {
     border-radius: 100%;
     background-color: #f1f1f1;
     margin: 0 auto;
-
 }
 
 img,.round {
@@ -195,15 +209,14 @@ img,.round {
     align-items: center;
     text-align: center;
 }
-
+/* Third page */
 .Attractions {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto;
-    margin-left: 100px;
-    margin-right: 100px;
     justify-items: center;
     align-items: center;
     margin-bottom: 200px;
+    margin-top: 20px;
 }
 
 .Attractions span {
@@ -218,4 +231,276 @@ img,.round {
     margin-top: -40px;
     margin-bottom: 50px;
     font-size: 15px;
+}
+/* Fourth page */
+.Discount {
+    display: flex;
+    background-color: #4d4d4d;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.DiscountNumber {
+    color: #ffb300;
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 10px;
+    display:inline-flex
+}
+
+.Discount h1:nth-child(1) {
+    margin-top: 100px;
+}
+
+.Discount h1:nth-child(2) {
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+.Discount h2{
+    font-weight: 500;
+}
+
+.Discount span {
+    display: inline-flex;
+    background-color: #717171;
+    color: #ffb300;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    margin: 5px;
+}
+/* Fifth page */
+.Guys {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.CEO {
+    border-style: double;
+    border-color: #ffb300;
+}
+
+.Guys span{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    width: 295px;
+    height: 100px;
+    background-color: white;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.Guys img{
+    display: block;
+    margin: 0 auto;
+}
+/* Sixth page */
+.Top {
+    flex-direction: column;
+    display: inline-grid;
+    grid-template-columns: 345px 345px;
+    grid-template-rows: 252px 252px 530px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    margin-bottom: 200px;
+    gap: 30px 30px;
+}
+
+.OTTAWA {
+    background-image: url(./TV一轮考核/assets/top-2.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    width: 345px;
+    height: 252px;
+}
+
+.SYDNEY {
+    background-image: url(./TV一轮考核/assets/top-4.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    width: 345px;
+    height: 252px;
+}
+
+.TOKYO {
+    background-image: url(./TV一轮考核/assets/top-3.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    width: 345px;
+    height: 252px;
+}
+
+.SINGAPORE {
+    background-image: url(./TV一轮考核/assets/top-3.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    width: 345px;
+    height: 252px;
+}
+
+.PRICE-DROP {
+    display: inline;
+    width: 345px;
+    height: 530px;
+    background-image: url(./TV一轮考核/assets/top-1.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    border-color: #ffb300;
+    border-width: 10px;
+    border-top: none;
+    border-right: none;
+    box-sizing: border-box;
+    border-style: solid;
+}
+
+.PRICE-DROP article {
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+.PRICE-DROP article:nth-child(1) {
+    margin-top: 80px;
+}
+
+.PRICE-DROP article:nth-child(2) {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.PRICE-DROP article:nth-child(3) {
+    margin-top: 30px;
+}
+
+.PRICE-DROP article:nth-child(4) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* Seventh page */
+.LatestTweets {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./TV一轮考核/assets/bg-2.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+.Subscribe {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-rows: 50% 50%;
+    color: white;
+}
+
+.Subscribe div {
+    text-align: left;
+    font-size: 10px;
+}
+
+.Subscribe h2 {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.LogoFooter {
+    zoom: .7;
+    margin-top: 100px;
+    margin-left: 2.5%;
+}
+
+.iconblocks img{
+    display: inline-block;
+    padding: 2%;
+    zoom: .5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #909090;
+    margin: 2.5%;
+    margin-top: 100px;
+    margin-left: 2.5%;
+}
+
+.Twitter {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+
+.Subscribe a {
+    display: flex;
+    text-align: left;
+    color: #ffb300;
+    font-size: 10px;
+    margin: 0%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.Tags {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.Tagsbutton {
+    color: white;
+    width: 108px;
+    height: 38px;
+    border-width: 2px;
+    border-radius: 28px;
+    border-color: #fff;
+    border-style: solid;   
+    background-color: transparent; 
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/*FOOTER*/
+.Footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #090909;
+}
+
+.Footer article {
+    font-weight: bold;
+    font-size: normal;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.Footer input {
+    width: 60%;
+    margin: 0 auto;
+    color: #909090;
+    border-color: #909090;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    text-align: center;
+    background-color: #090909;
+    font-size: 10px;
+    height: 40px;
 }
